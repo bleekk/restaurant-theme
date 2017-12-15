@@ -207,7 +207,12 @@
     <section id="price">
         <div class="container">
             <div class="row">
+            <!-- if right_blocks then col-md-9 else col-md-12 -->
+                <{if $xoBlocks.canvas_right}>
                 <div class="col-md-9 col-sm-9 col-sx-12">
+                <{else}>
+                <div class="col-md-12 col-sm-12 col-sx-12">
+                <{/if}>
                     <{$xoops_contents}>
                 </div><!-- .col-md-12 close -->
                 <{if $xoBlocks.canvas_right}>
